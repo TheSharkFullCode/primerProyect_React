@@ -1,0 +1,72 @@
+
+.Credicard-Box{
+  height: 300px;
+  width: 600px;
+  border: orange solid 1px;
+  border-radius: 2em;
+  background-color: #eeeeee;
+
+}
+
+.type{
+  text-align: right;
+  margin-right: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.expire{
+  /* font-size: 20px; */
+  color: white;
+  /* background-color: blue solid 1px; */
+}
+
+.expirationMonth{
+
+/* font-size: 10px; */
+color: white; 
+
+ /* text-align: right; */
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.alinear{
+  display: flex;
+  gap: 10px;
+
+}
+
+.center{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: solid red 1px; */
+
+}
+.bank{
+  color: white;
+}
+.owner{
+  color: white;
+}
+
+.expirationYears{
+  /* font-size: 20px; */
+  color: white;
+}
+.number{
+  color: white;
+}
+
+.cssClass{
+  background-color: #222222;
+}
+
+.bgcolor{
+ background-color: #11aa99;
+}
