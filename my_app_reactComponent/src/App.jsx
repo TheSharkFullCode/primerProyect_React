@@ -1,30 +1,26 @@
 import './App.css'
 
 import {Creditcard} from './component/Creditcard'
+// import {visasImg} from './assets/img/visa.png'
 
 // const [count, setCount] = useState(0)
+//una funcion q lamacena algo.
 
 function App() {
 
-
-
-  return (
+  return (  
 
     <>
-
-     <Creditcard type = 'visa ' number = "0123456789016984" expire='Expire' expirationMonth ={9} expirationYears ={2021} bank = 'BPN' owner ='Maxcence Bouret' cssClass ='Credicard-Box'/>
-     <Creditcard type = 'Ma' number = "0123456778904755" expire='Expire' expirationMonth ={3} expirationYears ={2021} bank = 'BPN' owner ='Maxce Bouret'  cssClass ='Credicard-Box' />
-
-
-      {/* <Creditcard owner ='Maxcence Bouret'>  </Creditcard> */}
+      {/* <visasImg/>  */}
+     <Creditcard type = 'visa ' number = "0123  4567 8901  9654 " expire='Expire' expirationMonth ={9} expirationYears ={2021} bank = 'BNP' owner ='Maxcence Bouret' cssClass ='Credicard-One'  />
+     <Creditcard type = 'Master Card' number = "0123  4567 7890  9654" expire='Expire' expirationMonth ={3} expirationYears ={2021} bank = 'N26' owner ='Maxce Bouret'  cssClass ='Credicard-Box' />
+     <Creditcard type = 'visa' number = "0123  4567 7890  9654" expire='Expire' expirationMonth ={3} expirationYears ={2021} bank = 'Name of Bank' owner ='Firts Name Last Name'  cssClass ='Credicard-Three' />
 
     </>
-
-  )
+    )
 
 }
 
 export default App
 
-{/* <Creditcard type={'visa'}> </Creditcard> */}
 
