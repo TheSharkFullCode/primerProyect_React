@@ -1,10 +1,14 @@
+
+import visasImg from '../assets/img/visaTransparent.png';
+
 export function Creditcard(props){
 
     const hideNumber = (number) => {
-
         const hiddenDigits = ".".repeat(number.length - 4) + number.slice(-4);
-        return hiddenDigits;
 
+        const formattedNumber = hiddenDigits.replace(/\d{4}(?!$)/g, "$& ");
+
+        return formattedNumber;
       };
 
 
@@ -13,16 +17,17 @@ export function Creditcard(props){
 
         < div className="RowsCenter">
 
+
         <div className={props.cssClass}>
 
+        <img src= {visasImg}  className='img'/>
+        {/* <h1 className="type">   {props.type}    </h1>  */}
 
-        <h1 className="type">   {props.type}    </h1> 
-
-        {/* <img src={visasImg}  /> */}
 
              <div className="container">
             
-                <h2 className="Number"> {hideNumber(props.number)}   </h2>
+                {/* <h2 className="Number"> {hideNumber(props.number).separatElemnet},{hideNumber(props.number).hiddenDigits} </h2> */}
+                <h2 className="Number">{hideNumber(props.number)}</h2>
 
                 <div className="center">
                     
@@ -45,7 +50,8 @@ export function Creditcard(props){
                         <span className="owner"> {props.owner} </span>
                     </section>
 
-                    <i class="fa-thin fa-star"></i>
+                    {/* <img src= alt="" /> */}
+                    {/* <i class="fa-thin fa-star"></i> */}
 
                  </div>
         

@@ -17,6 +17,16 @@
 
 }
 
+.img{
+  width: 100px;
+  height: 50px;
+ margin-top: 20px;
+   margin-left: 390px;
+  /* position: relative; */
+  /* float: right 245px; */
+  
+}
+
 .Credicard-Three{
   /* display: flex; */
   height: 250px;
